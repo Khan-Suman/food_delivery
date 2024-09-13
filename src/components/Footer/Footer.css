@@ -1,0 +1,111 @@
+.footer {
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.footer-contents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+
+.footer-left-contents,
+.footer-center-contents,
+.footer-right-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer-center-contents li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-left-contents .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    gap: 15px;
+}
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: grey;
+    border: none;
+}
+
+/* Media queries */
+@media (max-width: 1050px) {
+    .footer-contents {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-contents {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-left-contents,
+    .footer-center-contents,
+    .footer-right-contents {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-contents {
+        gap: 30px;
+    }
+
+    .footer-left-contents p,
+    .footer-right-contents p,
+    .footer-right-contents h2,
+    .footer-center-contents h2,
+    .footer-center-contents ul,
+    .footer-center-contents li {
+        font-size: 14px;
+    }
+
+    .footer hr {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-contents {
+        gap: 20px;
+    }
+
+    .footer-left-contents p,
+    .footer-right-contents p,
+    .footer-right-contents h2,
+    .footer-center-contents h2,
+    .footer-center-contents ul,
+    .footer-center-contents li {
+        font-size: 12px;
+    }
+
+    .footer-left-contents .social-media-icons {
+        gap: 10px;
+        width: 60px;
+    }
+
+    .footer hr {
+        margin: 10px 0;
+    }
+}
